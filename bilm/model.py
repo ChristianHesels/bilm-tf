@@ -656,6 +656,7 @@ def dump_bilm_embeddings(vocab_file, dataset_file, options_file,
     ops = model(ids_placeholder)
 
     config = tf.ConfigProto(allow_soft_placement=True)
+    config.gpu_options.allow_growth = True
     with tf.Session(config=config) as sess:
         sess.run(tf.global_variables_initializer())
         sentence_id = 0
