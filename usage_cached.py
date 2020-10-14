@@ -13,9 +13,9 @@ dataset_file = 'data/raw_sentences.txt'
 
 # Location of pretrained LM.  Here we use the test fixtures.
 datadir = os.path.join('tests', 'fixtures', 'model')
-vocab_file = 'data/blm-output-result/bilm-output-result/vocab-train.txt'
-options_file = 'data/blm-output-result/bilm-output-result/options.json'
-weight_file = 'data/blm-output-result/bilm-output-result/weights.hdf5'
+vocab_file = 'data/bilm-output-result/vocab-train.txt'
+options_file = 'data/bilm-output-result/options.json'
+weight_file = 'data/bilm-output-result/weights.hdf5'
 
 # Dump the embeddings to a file. Run this once for your dataset.
 embedding_file = 'elmo_embeddings.hdf5'
